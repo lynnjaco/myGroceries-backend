@@ -10,4 +10,15 @@ const getAllGroceries = async () => {
     }
 };
 
-module.exports = { getAllGroceries }
+//one item
+const getGroceryItem = async (id) => {
+    try {
+        const oneItem =await db.one("SELECT * FROM groceries WHERE id=$1", id);
+        return oneItem;
+    }catch (error) {
+        return error;
+    }
+};
+
+
+module.exports = { getAllGroceries, getGroceryItem };
