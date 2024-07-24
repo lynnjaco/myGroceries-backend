@@ -5,12 +5,12 @@ const express = require("express");
 
 //CONFIGURATION
 const app = express();
-const groceryController =require("./controllers/groceryController.js");
+const groceriesController =require("./controllers/groceriesController.js");
 
 //MIDDLEWARE
 app.use(cors());
 app.use(express.json());
-app.use("/grocery",groceryController);
+app.use("/groceries",groceriesController);
 
 //ROUTES
 app.get("/", (req, res) => {

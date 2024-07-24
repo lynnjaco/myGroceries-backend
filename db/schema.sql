@@ -1,17 +1,15 @@
-DROP DATABASE IF EXISTS grocery_dev;
-CREATE DATABASE grocery_dev;
+DROP DATABASE IF EXISTS groceries_dev;
+CREATE DATABASE groceries_dev;
 
-\c grocery_dev
+\c groceries_dev;
 
-CREATE TABLE colors (
+CREATE TABLE groceries (
  id SERIAL PRIMARY KEY,
  name TEXT NOT NULL,
- in_refrigerator BOOLEAN,
+ is_organic BOOLEAN,
  quantity INT,
  category TEXT,
  price DECIMAL,
  dateAdded TIMESTAMP,
- expiration TIMESTAMP,
-
-
+ expiration TIMESTAMP
 );
