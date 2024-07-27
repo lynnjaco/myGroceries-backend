@@ -10,7 +10,7 @@ INSERT INTO groceries (name, is_organic, quantity, category, price, dateAdded, e
 ('Butter', TRUE, 2, 'Dairy', 3.00, '2024-07-23 08:00:00', '2024-08-20 08:00:00'),
 ('Orange Juice', TRUE, 3, 'Beverage', 4.50, '2024-07-23 08:00:00', '2024-07-30 08:00:00'),
 ('Chicken Breast', TRUE, 4, 'Meat', 7.99, '2024-07-23 08:00:00', '2024-07-27 08:00:00'),
-('Bananas', FALSE, 8, 'Fruit', 0.30, '2024-07-23 08:00:00', '2024-07-28 08:00:00'),
+('Banana', FALSE, 8, 'Fruit', 0.30, '2024-07-23 08:00:00', '2024-07-28 08:00:00'),
 ('Tomatoes', TRUE, 5, 'Vegetable', 1.50, '2024-07-23 08:00:00', '2024-07-30 08:00:00'),
 ('Cheese', FALSE, 1, 'Dairy', 5.50, '2024-07-23 08:00:00', '2024-08-15 08:00:00'),
 ('Lettuce', TRUE, 2, 'Vegetable', 1.00, '2024-07-23 08:00:00', '2024-07-27 08:00:00'),
@@ -24,7 +24,7 @@ INSERT INTO groceries (name, is_organic, quantity, category, price, dateAdded, e
 ('Jelly', FALSE, 1, 'Pantry', 2.20, '2024-07-23 08:00:00', '2024-12-31 08:00:00'),
 ('Potatoes', TRUE, 10, 'Vegetable', 0.40, '2024-07-23 08:00:00', '2024-08-15 08:00:00'),
 ('Onions', FALSE, 5, 'Vegetable', 0.60, '2024-07-23 08:00:00', '2024-08-10 08:00:00'),
-('Fish', TRUE, 2, 'Meat', 6.50, '2024-07-23 08:00:00', '2024-07-25 08:00:00'),
+('Fish', TRUE, 2, 'Seafood', 6.50, '2024-07-23 08:00:00', '2024-07-25 08:00:00'),
 ('Soda', FALSE, 6, 'Beverage', 1.00, '2024-07-23 08:00:00', '2024-12-31 08:00:00'),
 ('Ice Cream', FALSE, 3, 'Frozen', 4.00, '2024-07-23 08:00:00', '2024-12-31 08:00:00');
 

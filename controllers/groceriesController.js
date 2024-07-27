@@ -1,10 +1,8 @@
 const express = require("express");
 const groceries = express.Router();
-const { getAllGroceries, getGroceryItem,createGroceryItem,deleteGroceryItem, updateGroceryItem } = require("../queries/groceries");
+const { getAllGroceries, getGroceryItem,createGroceryItem, deleteGroceryItem, updateGroceryItem } = require("../queries/groceries");
 
 //const { checkGroceries } =require("../validations/checkGroceries.js");
-
-
 
 // INDEX
 groceries.get("/", async (req, res) => {
@@ -34,7 +32,6 @@ groceries.post("/", async (req, res) => {
   });
 
 //DELETE
-
 groceries.delete("/:id", async (req, res) => {
     const { id } = req.params;
     const deletedGroceryItem = await deleteGroceryItem(id);
@@ -46,10 +43,12 @@ groceries.delete("/:id", async (req, res) => {
 });
 
 //UPDATE
-
 groceries.put("/:id", async (req, res)=>{
     const { id } = req.params;
     const updatedGroceryItem = await updateGroceryItem(id, req.body);
+    // console.log(req.body);
+    // console.log(updatedGroceryItem);
+
     res.status(200).json( updatedGroceryItem );
 });
 
