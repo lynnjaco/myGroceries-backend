@@ -46,9 +46,6 @@ groceries.delete("/:id", async (req, res) => {
 groceries.put("/:id", async (req, res)=>{
     const { id } = req.params;
     const updatedGroceryItem = await updateGroceryItem(id, req.body);
-    // console.log(req.body);
-    // console.log(updatedGroceryItem);
-
     res.status(200).json( updatedGroceryItem );
 });
 

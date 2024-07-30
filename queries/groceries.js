@@ -10,6 +10,7 @@ const getAllGroceries = async () => {
     }
 };
 
+
 //one item
 const getGroceryItem = async (id) => {
     try {
@@ -19,7 +20,6 @@ const getGroceryItem = async (id) => {
         return error;
     }
 };
-
 
 const createGroceryItem= async (groceryItem) => {
     if(!groceryItem.dateAdded) {
